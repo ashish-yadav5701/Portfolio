@@ -1,0 +1,16 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.7vw 1vw;
+    height: 4vh;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid grey;
+}
+.navContent{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    height: 100%;
+    align-items: center;
+}
