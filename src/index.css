@@ -37,3 +37,11 @@ body {
     background-color: #f9f9f9;
   }
 }
+
+::-webkit-scrollbar{
+  width: 3px;
+}
+@font-face {
+  font-family: 'customFont';
+  src: url('./assets/FreightDispProMedium-Italic.ttf') format('truetype');
+}

@@ -1,5 +1,136 @@
 .home{
-    width: 100%;
-    height: 100%;
-    background-color: aqua;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #0E0613;
+    height:96vh;
+}
+.Intro{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:40%;
+    min-height: 300px;
+    color: white;
+}
+.pannel1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left:20px;
+   flex: 1 1;
+   h1{
+    margin: 0px;
+   }
+}
+.pannel2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1 1;
+    padding:10px;
+    overflow: hidden;
+    object-fit: contain;
+   
+}
+.pannel2 img{
+    width: 20vw;
+    height:20vw;
+    object-fit:fill;
+    min-height: 150px;
+    min-width: 150px;
+    max-height: 270px;
+    max-width: 270px;
+    margin-right: 10px;
+}
+#myImage{
+    /* border-bottom: 8px solid rgb(82, 25, 82); */
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px 1px rgba(82, 25, 82, 0.401);
+}
+#myImage:hover{
+    border: 5px solid rgb(168, 2, 168);
+    border-radius: 50%;
+    perspective: 100px;
+    transform-style: preserve-3d;
+    transform: rotateX(15deg);
+   
+}
+#name{
+    font-size: 42px;
+    font-weight: bolder;
+    font-family: 'customFont';
+}
+#designation{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+}
+#contact{
+    margin-top: 2vh;
+    width: 12vw;
+    padding: 10px 2px;
+    font-size: 18px;
+    border-radius: 10px;
+    min-width: 105px;
+    border: 1px solid rgb(47, 0, 47);
+    background-color: rgb(84, 0, 84);
+  
+    font-weight: bold;
+    box-shadow: 0px 0px 5px 6px rgba(237, 133, 237, 0.232);
+}
+
+@media (max-width:600px) {
+    .home{
+        height: calc(100vh - 30px);
+    }
+    .Intro{
+        height: 60%;
+        flex-direction: column-reverse;
+    }
+    .pannel1{
+        padding-left: 10px;
+        width: 100%;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+    }
+    .pannel2{
+        width: 100%;
+        flex: 1;
+        justify-content:flex-end;
+        align-items: center;
+    }
+    .pannel2 img{
+       margin: 0px;
+    }
+    #contact{
+        width: 40vw;
+    }
+    
+}
+.professionalSummary{
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+align-items: flex-start;
+flex: 1;
+padding: 10px 20px;
+}
+.professionalSummary h2{
+    margin: 10px 0px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: underline;
+}
+.professionalSummary p{
+    font-size: 20px;
+    color: white;
+    text-align: justify;
+    font-family:"Inter", sans-serif;
+    margin: 0px;
 }
