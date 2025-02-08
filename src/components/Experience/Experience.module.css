@@ -1,0 +1,75 @@
+.experience {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.jobTitle {
+    font-size: 2vmax;
+    font-weight: bold;
+    color: #0c81f6;
+}
+.company {
+    font-size: 1.6vmax;
+    font-weight: bold;
+}
+.date {
+    font-size: 1.2vmax;
+    color: #666;
+}
+.role {
+    padding-left: 2vh;
+}
+ul {
+    padding-left: 2vw;
+    margin: 5px;
+}
+.heading{
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    width: 100%;
+}
+.role h3{
+    font-size: 1.7vmax;
+    margin: 5px 0px;
+    padding: 0px;
+}
+.role ul{
+    font-size: 1.3vmax;
+    
+}
+
+@media (max-width:600px) {
+    
+.jobTitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0c81f6;
+}
+.company {
+    font-size: 16px;
+    font-weight: bold;
+}
+.date {
+    font-size: 14px;
+    color: #666;
+}
+.role ul{
+    font-size: 14px;
+    
+}
+.role {
+    padding-left:0px;
+}
+.role h3{
+    font-size: 16px;
+    margin: 5px 0px;
+    padding: 0px;
+}
+ul {
+    padding-left: 20px;
+}
+
+}
