@@ -45,3 +45,8 @@ body {
   font-family: 'customFont';
   src: url('./assets/FreightDispProMedium-Italic.ttf') format('truetype');
 }
+@media (max-width:600px){
+  ::-webkit-scrollbar{
+    display: none;
+  }
+}
