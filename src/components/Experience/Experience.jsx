@@ -11,21 +11,14 @@ const Experience = () => {
                     <div className={styles.date}>March 2024 – Present</div>
                 </div>
                 <div className={styles.role}>
-                    <h3>Banking Project {`(July 2024 - Present)`}</h3>
                     <ul >
-                        <li>Developed and maintained Java-based microservices, ensuring high performance and scalability.</li>
-                        <li>Built and managed RESTful APIs for seamless integration with internal and external systems.</li>
-                        <li>Implemented full-stack solutions for internal teams using Node.js backend and React frontend to enhance teams efficiency and developer productivity.</li>
+                        <li>Engineered scalable Java microservices and RESTful APIs to streamline system integration in banking.</li>
+                        <li>Developed full-stack solutions using Node.js and React to enhance internal team efficiency and productivity.</li>
+                        <li>Designed and managed APIs for insurance workflows, ensuring security, performance optimization, and seamless data processing</li>
                     </ul>
                 </div>
 
-                <div className={styles.role}>
-                    <h3>Insurance Project {`(March 2024 - June 2024)`}</h3>
-                    <ul>
-                        <li>Designed and developed APIs to streamline insurance workflows and data processing.</li>
-                        <li>Managed API lifecycle, including versioning, security, and performance optimization.</li>
-                    </ul>
-                </div>
+                
             </div>
             <div>
             <div className={styles.heading}>
