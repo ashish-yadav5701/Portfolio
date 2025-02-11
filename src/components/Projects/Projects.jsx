@@ -20,33 +20,22 @@ const Projects = () => {
 
         return () => clearInterval(intervalId); // Cleanup interval on component unmount
     }, []);
-
     useEffect(() => {
-        gsap.fromTo(
-            `.${styles.project}:nth-child(odd)`,
-            { x: '-100%', opacity: 0 },
-            {
-                x: '0%', opacity: 1, duration: 1, stagger: 0.3,
-                scrollTrigger: {
-                    trigger: `.${styles.project}:nth-child(odd)`,
-                    start: 'top 80%',
-                    toggleActions: 'play none none none'
+        gsap.utils.toArray(`.${styles.project}`).forEach((project, index) => {
+            const direction = index % 2 === 0 ? '-100%' : '100%';
+            gsap.fromTo(
+                project.children,
+                { x: direction, opacity: 0 },
+                {
+                    x: '0%', opacity: 1, duration: 1, stagger: 0.3,
+                    scrollTrigger: {
+                        trigger: project,
+                        start: 'top 80%',
+                        toggleActions: 'play none none none'
+                    }
                 }
-            }
-        );
-
-        gsap.fromTo(
-            `.${styles.project}:nth-child(even)`,
-            { x: '100%', opacity: 0 },
-            {
-                x: '0%', opacity: 1, duration: 1, stagger: 0.3,
-                scrollTrigger: {
-                    trigger: `.${styles.project}:nth-child(even)`,
-                    start: 'top 80%',
-                    toggleActions: 'play none none none'
-                }
-            }
-        );
+            );
+        });
     }, []);
 
     return (
