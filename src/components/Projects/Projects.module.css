@@ -1,10 +1,11 @@
 .projectContainer{
     display: flex;
-    width: 100%;
+    padding: 3px;
     height: 100%;
     flex-direction: column;
     text-align: justify;
     gap: 2vh;
+    overflow: hidden;
 }
 .project{
     display: flex;

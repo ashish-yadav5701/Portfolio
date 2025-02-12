@@ -160,7 +160,7 @@ const Projects = () => {
             </div>
             <div className={styles.project} ref={el => projectRefs.current[1] = el}>
                 <div className={styles.leftContainer}>
-                    <img src='eventease3.png' alt="eventease" style={{ background: 'white' }} />
+                    <img src='rsqc.jpg' alt="eventease" style={{ background: 'white' }} />
                 </div>
                 <div className={styles.rightContainer}>
                     <h3>RSQC</h3>
